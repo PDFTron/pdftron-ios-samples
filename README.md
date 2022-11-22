@@ -15,4 +15,5 @@ More samples are included in the [.dmg download](https://www.pdftron.com/documen
 |Showcase|The source code for our feature showcase sample.|
 |CPP Sample|Demonstrates how to use PDFTron via a C++ interface.|
 |Custom|Demonstrates the use of a custom filter, which enables the implementation for custom DRM solutions.|
+|CustomFreeText Sample|Demonstrates the use of a custom UIView used to set the appearance of Free Text annotation.|
 |Miscellaneous Samples|An Xcode project that contains demonstrates [core programmatic PDF functionality](https://www.pdftron.com/documentation/samples/?platforms=ios).|

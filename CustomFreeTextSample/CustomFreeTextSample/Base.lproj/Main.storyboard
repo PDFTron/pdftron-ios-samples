@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Su-nf-Tt2">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="y3Y-yg-YUu">
+            <objects>
+                <viewController id="3Su-nf-Tt2" customClass="ViewController" customModule="PdftronDemoProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F4D-Is-dmI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sic-IQ-XQ0" customClass="PTPDFViewCtrl">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0S-9P-yed">
+                                <rect key="frame" x="16" y="762" width="361" height="40"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="361" id="b5g-4e-pYS"/>
+                                    <constraint firstAttribute="height" constant="40" id="g3K-dR-uy3"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="3Su-nf-Tt2" eventType="touchUpInside" id="UYZ-e1-q9B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fuA-qv-tSe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fuA-qv-tSe" firstAttribute="trailing" secondItem="s0S-9P-yed" secondAttribute="trailing" constant="16" id="BJM-7N-1kZ"/>
+                            <constraint firstItem="Sic-IQ-XQ0" firstAttribute="leading" secondItem="fuA-qv-tSe" secondAttribute="leading" id="D6X-nl-kB5"/>
+                            <constraint firstItem="s0S-9P-yed" firstAttribute="leading" secondItem="fuA-qv-tSe" secondAttribute="leading" constant="16" id="H3c-71-odr"/>
+                            <constraint firstItem="fuA-qv-tSe" firstAttribute="bottom" secondItem="s0S-9P-yed" secondAttribute="bottom" constant="16" id="O6e-Dw-Sre"/>
+                            <constraint firstItem="fuA-qv-tSe" firstAttribute="bottom" secondItem="Sic-IQ-XQ0" secondAttribute="bottom" id="aHh-8M-XrY"/>
+                            <constraint firstItem="fuA-qv-tSe" firstAttribute="trailing" secondItem="Sic-IQ-XQ0" secondAttribute="trailing" id="bGq-tn-S3v"/>
+                            <constraint firstItem="fuA-qv-tSe" firstAttribute="bottom" secondItem="s0S-9P-yed" secondAttribute="bottom" constant="16" id="dr6-Ee-N4O"/>
+                            <constraint firstItem="Sic-IQ-XQ0" firstAttribute="top" secondItem="fuA-qv-tSe" secondAttribute="top" id="faF-iw-474"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addFreeTextAnnotation" destination="s0S-9P-yed" id="aho-aG-8n5"/>
+                        <outlet property="pdfView" destination="Sic-IQ-XQ0" id="xbz-bu-TLW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KTd-eW-0Il" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
